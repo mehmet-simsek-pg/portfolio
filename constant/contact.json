@@ -1,0 +1,16 @@
+{
+  "title": "Contact",
+  "h2": "Get In Touch",
+  "name": "Mehmet Simsek",
+  "jobTitle": "Software Developer",
+  "description": "I am available for freelance or full-time positions. Contact me and let's talk.",
+  "connect": "Connect with me",
+  "form": {
+    "name": "Name",
+    "phone_number": "Phone Number",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message"
+  }
+}

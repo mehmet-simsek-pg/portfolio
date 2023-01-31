@@ -43,8 +43,8 @@ const Navbar = () => {
           <Image
             src={NavLogo}
             alt="/"
-            width="100"
-            height="100"
+            width="60"
+            height="60"
             className="cursor-pointer"
             style={{
               borderRadius: "50%",
@@ -66,7 +66,7 @@ const Navbar = () => {
               <Link href="/#projects">{navbar.projects}</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/resume">{navbar.resume}</Link>
+              <Link href="/#resume">{navbar.resume}</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/#contact">{navbar.contact}</Link>
@@ -141,7 +141,7 @@ const Navbar = () => {
                   {navbar.projects}
                 </li>
               </Link>
-              <Link href="/resume">
+              <Link href="/#resume">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   {navbar.resume}
                 </li>
@@ -180,7 +180,7 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href="/resume">
+                <Link href="/#resume">
                   <div
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"

@@ -1,16 +1,33 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import useDownloader from "react-use-downloader";
+import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
 import links from "../constant/links";
 
 const resume = () => {
+  {
+    /* 
+  const { download } = useDownloader();
+  const fileUrl = "/Resume.pdf";
+  const filename = "Resume.pdf";*/
+  }
   return (
     <div id="resume" className="max-w-[940px] mx-auto p-2 pt-[120px]">
       <h2 className="text-center mt-2">Resume</h2>
       <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
         <h2 className="text-center">Mehmet Simsek</h2>
         <div className="flex">
+          {/* 
+          <button
+            onClick={() => download(fileUrl, filename)}
+            style={{ marginRight: "1rem", color: "black" }}
+          >
+            <FaDownload size={20} />
+          </button>*/}
           <a href={links.linkedin} target="_blank" rel="noreferrer">
-            <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
+            <FaLinkedinIn
+              size={20}
+              style={{ marginRight: "1rem", backgroundColor: "transparent" }}
+            />
           </a>
           <a href={links.github} target="_blank" rel="noreferrer">
             <FaGithub size={20} style={{ marginRight: "1rem" }} />
@@ -44,56 +61,21 @@ const resume = () => {
 
       {/* Skills */}
       <div className="text-center py-4">
-        <h5 className="text-center underline text-[18px] py-2">
+        <h5 className="text-center underline text-[20px] py-2">
           Technical Skills
         </h5>
-        <p className="py-2 text-left">
-          <span className="font-bold">Backend</span>
-          <span className="px-2">:</span>Java Spring Boot
-          <span className="px-2">|</span>Nodejs Express
-        </p>
-        <p className="py-2 text-left">
-          <span className="font-bold">Frontend</span>
-          <span className="px-2">:</span>HTML
-          <span className="px-2">|</span>CSS
-          <span className="px-2">|</span>Javascript
-          <span className="px-2">|</span>ReactJS
-          <span className="px-2">|</span>NextJS
-          <span className="px-2">|</span>Redux
-          <span className="px-2">|</span>TypeScript
-          <span className="px-2">|</span>MaterialUI
-          <span className="px-2">|</span>Tailwind
-          <span className="px-2">|</span>Bootstrap
-          <span className="px-2">|</span>SASS
-        </p>
-        <p className="py-2 text-left">
-          <span className="font-bold">Databases</span>
-          <span className="px-2">:</span>MySQL
-          <span className="px-2">|</span>PostgreSQL
-          <span className="px-2">|</span>MongoDB
-        </p>
-        <p className="py-2 text-left">
-          <span className="font-bold">Test Automation</span>
-          <span className="px-2">:</span>Selenium
-          <span className="px-2">|</span>TestNG
-          <span className="px-2">|</span>Cucumber
-          <span className="px-2">|</span>Rest Assured
-          <span className="px-2">|</span>JUnit
-          <span className="px-2">|</span>Appium
-        </p>
-        <p className="py-2 text-left">
-          <span className="font-bold">Tools</span>
-          <span className="px-2">:</span>Git/Github
-          <span className="px-2">|</span>Jira
-          <span className="px-2">|</span>Xray
-          <span className="px-2">|</span>Confluence
-          <span className="px-2">|</span>Postman
-          <span className="px-2">|</span>Swagger
-          <span className="px-2">|</span>OpenAPI
-          <span className="px-2">|</span>Jenkins
-          <span className="px-2">|</span>Docker
-          <span className="px-2">|</span>Maven
-        </p>
+        <h5 className="py-2 font-bold">Backend</h5>
+        Java Spring Boot | Nodejs Express
+        <h5 className="py-2 font-bold">Frontend</h5>
+        HTML | CSS | Javascript | ReactJS | NextJS | Redux | Material UI |
+        Bootstrap | Sass | Tailwind | TypeScript
+        <h5 className="py-2 font-bold">Databases</h5> MySQL | MongoDB |
+        PostgreSQL
+        <h5 className="py-2 font-bold">Test Automation</h5>
+        Selenium | TestNG | Cucumber | Rest Assured | JUnit | Appium
+        <h5 className="py-2 font-bold">Tools</h5>
+        Git | Github | Jira | Xray | Confluence | Postman | Swagger | OpenAPI |
+        Jenkins | Docker | Maven
       </div>
 
       <h5 className="text-center underline text-[18px] py-4">
